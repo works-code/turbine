@@ -1,0 +1,12 @@
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:9091/eureka
+turbine:
+  cluster-name-expression: new String('default')
+  app-config: hystrix,hystrix02
+server:
+  port: 9092
+spring:
+  application:
+    name: TURBINE
